@@ -1,27 +1,48 @@
-# Decision Intelligence Platform (Posture-Sensitive Prioritization Engine)
+# 🚀 Portfolio Decision Intelligence Platform  
+### Posture-Sensitive Strategy & Prioritization Engine
 
-A deterministic decision intelligence platform that models how organizations prioritize initiatives under different strategic conditions while explicitly surfacing trade-offs, operational constraints, and decision confidence.
-
-This system combines structured analytics, predictive modeling, optimization, and AI-assisted interpretation — while keeping decision logic fully auditable and human-controlled.
-
----
-
-## 🔍 What This Tool Does
-
-This platform transforms multi-factor signals into structured prioritization.
-
-It does **not automate decisions**.  
-Instead, it:
-
-- Surfaces how rankings change under different strategic postures  
-- Highlights trade-offs across competing priorities  
-- Identifies operational bottlenecks and dependencies  
-- Quantifies decision confidence  
-- Provides structured executive-level interpretation  
+A decision intelligence system designed to help organizations prioritize initiatives under different strategic conditions — while explicitly surfacing trade-offs, constraints, and decision confidence.
 
 ---
 
-## 🚀 Key Capabilities
+## 🔍 Problem
+
+Organizations rely heavily on dashboards and analytics, but still struggle to answer:
+
+- Which initiatives should we prioritize right now?
+- How do priorities change under different strategies?
+- Where are hidden risks or bottlenecks?
+- How confident can we be in this decision?
+
+Traditional analytics provide visibility — but not **decision clarity**.
+
+---
+
+## 💡 Solution
+
+This platform transforms multi-factor signals into **structured, strategy-aware prioritization**.
+
+It does not automate decisions. Instead, it enables better decisions by:
+
+- Showing how rankings shift under different strategic postures  
+- Highlighting trade-offs across competing priorities  
+- Identifying operational bottlenecks and dependencies  
+- Quantifying decision confidence  
+- Generating structured executive-level interpretations  
+
+---
+
+## 📈 Business Impact
+
+- Converts analytics into decision-ready insights  
+- Improves strategic alignment across teams  
+- Reduces decision ambiguity in complex environments  
+- Enables faster and more confident prioritization  
+- Designed for high-stakes decision environments  
+
+---
+
+## 🧠 Core Capabilities
 
 - Strategy-based prioritization (Growth / Risk / Balanced)
 - Strategy sensitivity detection (Posture Delta)
@@ -34,23 +55,7 @@ Instead, it:
 
 ---
 
-## 🧠 Why This Matters
-
-Traditional dashboards show metrics.
-
-This platform shows:
-
-- How priorities shift under different strategies  
-- Where decisions are sensitive and require judgment  
-- Where execution bottlenecks may occur  
-- How constraints affect optimal decisions  
-- How to interpret results in an executive-friendly format  
-
-It bridges the gap between **data visibility and decision-making**.
-
----
-
-## 🏗 Architecture Overview
+## 🏗 System Architecture
 
 ### 1. Signal Layer
 - Growth Score  
@@ -85,13 +90,13 @@ It bridges the gap between **data visibility and decision-making**.
 
 ## 🔒 Design Principle
 
-The system separates deterministic decision modeling from AI interpretation.
+The system explicitly separates **decision logic from AI interpretation**.
 
-- All prioritization logic is **deterministic and auditable**
-- AI does **not influence or override decisions**
-- AI is used only for **structured explanation**
+- All prioritization logic is deterministic and auditable  
+- AI does not influence or override decisions  
+- AI is used only for structured explanation  
 
-This ensures strong governance and makes the system suitable for **high-stakes environments such as healthcare and operations**.
+This ensures strong governance and makes the system suitable for **high-stakes environments such as healthcare, operations, and finance**.
 
 ---
 
@@ -110,20 +115,19 @@ This ensures strong governance and makes the system suitable for **high-stakes e
 
 ## ⚙️ Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn (Logistic Regression)
-- Streamlit
-- Matplotlib / Seaborn
-- NetworkX
-- PuLP (Optimization)
-- Groq API (Llama 3.1 8B Instant)
+- Python  
+- Pandas, NumPy  
+- Scikit-learn (Logistic Regression)  
+- Streamlit  
+- Matplotlib / Seaborn  
+- NetworkX  
+- PuLP (Optimization)  
+- Groq API (Llama 3.1)  
 
 ---
 
 ## ▶️ How to Run
 
-### 1. Install dependencies
 ```bash
 pip install -r requirements.txt
+streamlit run app.py
