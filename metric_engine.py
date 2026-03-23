@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from predictive_risk_model import generate_risk_scores
 
 df = pd.read_csv("synthetic_portfolio_data.csv")
 df["Month"] = pd.to_datetime(df["Month"])
@@ -87,6 +88,9 @@ final_metrics["Growth_Score"] = min_max_scale(final_metrics["Total_Growth"])
 final_metrics["Stability_Score"] = min_max_scale(final_metrics["Volatility"], inverse=True)
 final_metrics["Diversification_Score"] = min_max_scale(final_metrics["HHI_Concentration"], inverse=True)
 final_metrics["Rollover_Score"] = min_max_scale(final_metrics["Rollover_Exposure"], inverse=True)
+
+# Add predictive risk scoring
+final_metrics = generate_risk_scores(final_metrics)
 
 # Strategy Scores
 final_metrics["Growth_First"] = (
