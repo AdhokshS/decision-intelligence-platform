@@ -1,24 +1,36 @@
-# Portfolio Decision Intelligence Engine
+# Decision Intelligence Platform (Posture-Sensitive Prioritization Engine)
 
-A posture-sensitive, multi-factor prioritization engine with AI-assisted executive interpretation.
+A deterministic decision intelligence platform that models how organizations prioritize initiatives under different strategic conditions while explicitly surfacing trade-offs, operational constraints, and decision confidence.
 
-This project demonstrates how deterministic scoring logic can be combined with structured AI narration to support decision governance — without automating managerial judgment.
+This system combines structured analytics, predictive modeling, optimization, and AI-assisted interpretation — while keeping decision logic fully auditable and human-controlled.
 
 ---
 
 ## 🔍 What This Tool Does
 
-This engine transforms multi-factor asset signals into posture-sensitive prioritization.
+This platform transforms multi-factor signals into structured prioritization.
 
-It does **not** automate decisions.  
-It surfaces how rankings shift under different strategic postures and highlights where human judgment is required.
+It does **not automate decisions**.  
+Instead, it:
 
-### Core Layers
+- Surfaces how rankings change under different strategic postures  
+- Highlights trade-offs across competing priorities  
+- Identifies operational bottlenecks and dependencies  
+- Quantifies decision confidence  
+- Provides structured executive-level interpretation  
 
-- Deterministic signal scoring
-- Strategy-sensitive ranking
-- Explicit decision confidence
-- AI-assisted executive interpretation
+---
+
+## 🚀 Key Capabilities
+
+- Strategy-based prioritization (Growth / Risk / Balanced)
+- Strategy sensitivity detection (Posture Delta)
+- Predictive risk scoring (logistic regression)
+- Resource allocation optimization under constraints
+- Operational bottleneck identification
+- Dependency graph modeling (critical path visibility)
+- Deterministic executive decision brief
+- AI-based strategic interpretation (Groq Llama 3.1)
 
 ---
 
@@ -26,40 +38,73 @@ It surfaces how rankings shift under different strategic postures and highlights
 
 Traditional dashboards show metrics.
 
-This engine shows:
+This platform shows:
 
-- How prioritization changes under alternative strategies
-- Where portfolio rankings materially shift
-- Which assets are posture-sensitive
-- Where decision confidence is weak
-- Where governance intervention is required
+- How priorities shift under different strategies  
+- Where decisions are sensitive and require judgment  
+- Where execution bottlenecks may occur  
+- How constraints affect optimal decisions  
+- How to interpret results in an executive-friendly format  
 
-It bridges the gap between data visibility and decision clarity.
+It bridges the gap between **data visibility and decision-making**.
 
 ---
 
 ## 🏗 Architecture Overview
 
-1. **Signal Layer**
-   - Growth Score
-   - Stability Score
-   - Diversification Score
-   - Rollover Score
+### 1. Signal Layer
+- Growth Score  
+- Stability Score  
+- Diversification Score  
+- Rollover Score  
+- Risk Score (predictive)
 
-2. **Strategy Layer**
-   - Growth_First weighting
-   - Risk_First weighting
-   - Balanced weighting
+### 2. Strategy Layer
+- Growth_First  
+- Risk_First  
+- Balanced  
 
-3. **Decision Layer**
-   - Dominant Strategy detection
-   - Decision Confidence scoring
-   - Posture Sensitivity snapshot
+### 3. Decision Layer
+- Dominant Strategy Detection  
+- Decision Confidence Scoring  
+- Strategy Sensitivity (Posture Delta)
 
-4. **Interpretation Layer**
-   - Structured AI narrative
-   - Governance-focused output
-   - No recomputation of metrics
+### 4. Optimization Layer
+- Resource allocation under constraints  
+- Portfolio selection based on strategy  
+
+### 5. Insight Layer
+- Operational bottleneck mapping  
+- Dependency graph modeling  
+
+### 6. Interpretation Layer
+- Deterministic executive decision brief  
+- AI-generated strategic narrative  
+
+---
+
+## 🔒 Design Principle
+
+The system separates deterministic decision modeling from AI interpretation.
+
+- All prioritization logic is **deterministic and auditable**
+- AI does **not influence or override decisions**
+- AI is used only for **structured explanation**
+
+This ensures strong governance and makes the system suitable for **high-stakes environments such as healthcare and operations**.
+
+---
+
+## 📊 Sample Outputs
+
+### Ranking & Strategy Prioritization
+![Ranking](screenshots/ranking.png)
+
+### Operational Bottleneck Identification
+![Bottleneck](screenshots/bottleneck.png)
+
+### AI Strategic Interpretation
+![AI Output](screenshots/ai_output.png)
 
 ---
 
@@ -67,38 +112,18 @@ It bridges the gap between data visibility and decision clarity.
 
 - Python
 - Pandas
+- NumPy
+- Scikit-learn (Logistic Regression)
 - Streamlit
+- Matplotlib / Seaborn
+- NetworkX
+- PuLP (Optimization)
 - Groq API (Llama 3.1 8B Instant)
 
 ---
 
-## 📊 Live Demo
+## ▶️ How to Run
 
-https://portfolio-decision-intelligence-mjmuvpadekbsvkxszlp5tr.streamlit.app/
-
----
-
-## 🎯 Positioning
-
-This project is designed to reflect how real analytics and portfolio teams operate:
-
-- Scoring is deterministic and auditable
-- AI is interpretive, not authoritative
-- Decision ownership remains human
-- Trade-offs are explicit
-- Governance is central
-
----
-
-## 🚀 Future Enhancements
-
-- Scenario simulation layer
-- Sensitivity heatmaps
-- Weight-adjustable strategy sliders
-- Asset-level drill-down views
-
----
-
-## Author
-
-Built as part of a portfolio focused on decision intelligence, analytics systems design, and governance-aware AI integration.
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
